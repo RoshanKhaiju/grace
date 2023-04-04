@@ -7,9 +7,7 @@
  */
 ?>
 
-<!-- Primary Navigation
-						============================================= -->
->
+<!-- Primary Navigation -->
 
 <nav class="primary-menu">
 
