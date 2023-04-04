@@ -12,9 +12,12 @@ if(have_rows('banner_repeater')): ?>
             <div id="rev_slider_2_1" class="rev_slider fullscreenbanner" data-version="5.4.8.1">
                 <ul>
                     <!-- SLIDE  -->
-                    <?php while(have_rows('banner_repeater')): the_row();
-                    $image = get_sub_field('banner_image'); ?>
-                    <li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    <?php
+                    $i= 7;
+                    while(have_rows('banner_repeater')): the_row();
+                    $image = get_sub_field('banner_image');
+                     ?>
+                    <li data-index="rs-<?php echo $i; ?>" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                         data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
                         data-thumb="<?php echo $image['url']; ?>"
                         data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
@@ -81,7 +84,9 @@ if(have_rows('banner_repeater')): ?>
                                 class="icon-angle-right"></i>
                         </a>
                     </li>
-                  <?php endwhile; ?>
+                  <?php
+                  $i = $i + 1;
+                endwhile; ?>
 
                     <!-- SLIDE  -->
 
