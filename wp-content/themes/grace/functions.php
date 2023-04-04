@@ -16,5 +16,3 @@
  });
 
  unset($include_files);
-
- ob_get_clean();

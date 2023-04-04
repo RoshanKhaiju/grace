@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The base configuration for WordPress
  *
@@ -32,10 +33,10 @@ define( 'DB_PASSWORD', '' );
 define( 'DB_HOST', 'localhost:3307' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define('DB_CHARSET', 'utf8mb4');
 
 /** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication unique keys and salts.
@@ -48,14 +49,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'ZTZ8|C**N&S+@7UGi|NxE5#1Wm7$Dtf2%V/C],Ku4flZgSN`3tDF}Q0_.]KBf5Qv' );
-define( 'SECURE_AUTH_KEY',  'Hx0}G_X&;tKeJT54B GM_sd@`*@;>|hR#R7O9DoG4@#xV;97R561%-Ue{?Q<nR[J' );
-define( 'LOGGED_IN_KEY',    'l~K1q&L;_9S3`;,C}YmY%2ME0aTR&q0MeXUVutZ$(J|ag1v:<P#H}8iWK>em3KG6' );
-define( 'NONCE_KEY',        '5|+}a[o6K:! qTD;:|_Zyf^;*!bjql~,r)TqO)kk><cMRRJ4`jtr^U0A_>@dAdM*' );
-define( 'AUTH_SALT',        ' R+oPI2XibHkQ5LU)!Yf]Ho)~6KCBYHRXOXwxUv3C]V7fG*-Z:}z-,+H{Bupk+yN' );
-define( 'SECURE_AUTH_SALT', '$@E;JFz!RwqCVqK&-v%]:lK?^$(koKD@n1f[5~7Z,pKFoQF%7s7RUt`i@L%*8)8#' );
-define( 'LOGGED_IN_SALT',   '[2|Vf>SC|#yZ:A0:Hj2_@attuXmRYh7nqq$zv>HiOGE1voz[#e3n*{u,<KA >p50' );
-define( 'NONCE_SALT',       'FZkXyaW<Hx+sM<T=_.W:XKbW}=L.E+vwb9P177jC*vxDJUkw7VNDO-~qB^72#e, ' );
+define('AUTH_KEY',         'ZTZ8|C**N&S+@7UGi|NxE5#1Wm7$Dtf2%V/C],Ku4flZgSN`3tDF}Q0_.]KBf5Qv');
+define('SECURE_AUTH_KEY',  'Hx0}G_X&;tKeJT54B GM_sd@`*@;>|hR#R7O9DoG4@#xV;97R561%-Ue{?Q<nR[J');
+define('LOGGED_IN_KEY',    'l~K1q&L;_9S3`;,C}YmY%2ME0aTR&q0MeXUVutZ$(J|ag1v:<P#H}8iWK>em3KG6');
+define('NONCE_KEY',        '5|+}a[o6K:! qTD;:|_Zyf^;*!bjql~,r)TqO)kk><cMRRJ4`jtr^U0A_>@dAdM*');
+define('AUTH_SALT',        ' R+oPI2XibHkQ5LU)!Yf]Ho)~6KCBYHRXOXwxUv3C]V7fG*-Z:}z-,+H{Bupk+yN');
+define('SECURE_AUTH_SALT', '$@E;JFz!RwqCVqK&-v%]:lK?^$(koKD@n1f[5~7Z,pKFoQF%7s7RUt`i@L%*8)8#');
+define('LOGGED_IN_SALT',   '[2|Vf>SC|#yZ:A0:Hj2_@attuXmRYh7nqq$zv>HiOGE1voz[#e3n*{u,<KA >p50');
+define('NONCE_SALT',       'FZkXyaW<Hx+sM<T=_.W:XKbW}=L.E+vwb9P177jC*vxDJUkw7VNDO-~qB^72#e, ');
 
 /**#@-*/
 
@@ -79,7 +80,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -88,8 +89,8 @@ define( 'WP_DEBUG', false );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (!defined('ABSPATH')) {
+	define('ABSPATH', __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
