@@ -1,9 +1,10 @@
 <?php
+
 /**
-* Template Name: Homepage
-*
-* @package grace
-*/
+ * Template Name: Homepage
+ *
+ * @package grace
+ */
 
 get_header();
 
@@ -20,13 +21,14 @@ get_header();
                     <!-- SLIDE  -->
                     <li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                         data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-                        data-thumb="<?php echo get_template_directory_uri();?>/assets/demos/recipes/images/slider/banner-1.jpg"
+                        data-thumb="<?php echo get_template_directory_uri(); ?>/assets/demos/recipes/images/slider/banner-1.jpg"
                         data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
                         data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                         data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo get_template_directory_uri();?>/assets/demos/recipes/images/slider/banner-1.jpg"
-                            alt="Image" data-duration="4000" data-lazyload="<?php echo get_template_directory_uri();?>/assets/demos/recipes/images/slider/banner-1.jpg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/demos/recipes/images/slider/banner-1.jpg"
+                            alt="Image" data-duration="4000"
+                            data-lazyload="<?php echo get_template_directory_uri(); ?>/assets/demos/recipes/images/slider/banner-1.jpg"
                             data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg"
                             data-no-retina />
                         <!-- LAYERS -->
@@ -38,7 +40,8 @@ get_header();
                             data-fontsize="['54','44','36','40']" data-width="auto" data-height="auto"
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":1200,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','left','center']" style="z-index: 7; white-space: nowrap; font-size: 54px; line-height: 54px; letter-spacing: 0px; color: #fff; ">
+                            data-textAlign="['inherit','inherit','left','center']"
+                            style="z-index: 7; white-space: nowrap; font-size: 54px; line-height: 54px; letter-spacing: 0px; color: #fff; ">
                             Grace Culinary Academy
                         </h3>
 
@@ -51,7 +54,8 @@ get_header();
                             data-height="auto" data-visibility="['on', 'on', 'off', 'off']" data-type="text"
                             data-responsive_offset="on"
                             data-frames='[{"delay":1500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','center']" style="z-index: 5; min-width: 480px; max-width: 480px; white-space: normal;letter-spacing: 0px; ">
+                            data-textAlign="['left','left','left','center']"
+                            style="z-index: 5; min-width: 480px; max-width: 480px; white-space: normal;letter-spacing: 0px; ">
                             Do you want to achieve your dream of becoming a professional
                             cook?
                         </p>
@@ -64,13 +68,13 @@ get_header();
                             data-height="auto" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":2600,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','left','center']" style="
-                      z-index: 14;
-                      white-space: normal;
-                      font-size: 20px;
-                      line-height: 22px;
-                      font-weight: 400;
-                      color: #ffffff;
-                    ">
+                          z-index: 14;
+                          white-space: normal;
+                          font-size: 20px;
+                          line-height: 22px;
+                          font-weight: 400;
+                          color: #ffffff;
+                        ">
                             <span>The spring intake class is now accepting
                                 <a href="assets/documents/document.pdf">enrollments.</a></span>
                         </div>
@@ -97,7 +101,8 @@ get_header();
                         data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/demos/recipes/images/slider/bg-2.jpg"
-                            alt="Image" data-duration="4000" data-lazyload="<?php echo get_template_directory_uri(); ?>/assets/demos/recipes/images/slider/bg-2.jpg"
+                            alt="Image" data-duration="4000"
+                            data-lazyload="<?php echo get_template_directory_uri(); ?>/assets/demos/recipes/images/slider/bg-2.jpg"
                             data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg"
                             data-no-retina />
                         <!-- LAYERS -->
@@ -110,13 +115,13 @@ get_header();
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":1200,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','left','center']" style="
-                      z-index: 7;
-                      white-space: nowrap;
-                      font-size: 54px;
-                      line-height: 54px;
-                      letter-spacing: 0px;
-                      color: #fff;
-                    ">
+                          z-index: 7;
+                          white-space: nowrap;
+                          font-size: 54px;
+                          line-height: 54px;
+                          letter-spacing: 0px;
+                          color: #fff;
+                        ">
                             Grace Culinary Academy
                         </h3>
 
@@ -130,18 +135,18 @@ get_header();
                             data-responsive_offset="on"
                             data-frames='[{"delay":1500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['left','left','left','center']" style="
-                      z-index: 5;
-                      min-width: 480px;
-                      max-width: 480px;
-                      white-space: normal;
-                      letter-spacing: 0px;
-                    ">
+                          z-index: 5;
+                          min-width: 480px;
+                          max-width: 480px;
+                          white-space: normal;
+                          letter-spacing: 0px;
+                        ">
                             Do you want to achieve your dream of becoming a professional
                             cook?
                             <!-- We will give
-                    you 5-days a week of practical bulk cooking based on the
-                    Australian TAFE system in our fully equipped commercial
-                    kitchen. -->
+                            you 5-days a week of practical bulk cooking based on the
+                            Australian TAFE system in our fully equipped commercial
+                            kitchen. -->
                         </p>
 
                         <!-- LAYER NR. 6 -->
@@ -152,13 +157,13 @@ get_header();
                             data-height="auto" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":2600,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','left','center']" style="
-                      z-index: 14;
-                      white-space: normal;
-                      font-size: 20px;
-                      line-height: 22px;
-                      font-weight: 400;
-                      color: #ffffff;
-                    ">
+                          z-index: 14;
+                          white-space: normal;
+                          font-size: 20px;
+                          line-height: 22px;
+                          font-weight: 400;
+                          color: #ffffff;
+                        ">
                             <span>The spring intake class is now accepting
                                 <a href="assets/documents/document.pdf">enrollments.</a></span>
                         </div>
