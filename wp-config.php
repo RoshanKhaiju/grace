@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'grace' );
+define( 'DB_NAME', 'grace_new_db' );
 
 /** Database username */
-define( 'DB_USER', 'phpmyadmin' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'admin' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3307' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
