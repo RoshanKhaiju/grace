@@ -1,23 +1,13 @@
 <?php
+
 /**
  * Grace functions and description
  *
  * @package grace
  */
- $include_files = [
-     "/inc/setup.php",
-     "/inc/walker.php",
- ];
 
- array_walk($include_files, function ($file) {
-     if (!locate_template($file, true, true)) {
-         trigger_error(sprintf('Could not find %s', $file), E_USER_ERROR);
-     }
- });
 
- unset($include_files);
 
-<<<<<<< HEAD
 /*
     ========================================
     theme support
@@ -38,6 +28,7 @@ add_action('init', 'grace_theme_support');
 */
 function grace_theme_scripts()
 {
+    $version = wp_get_theme()->get('Version');
     // enqueue styles
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.css');
 
@@ -89,45 +80,49 @@ function grace_theme_scripts()
 
 
     // enqueue scripts
-    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery.js');
-    wp_enqueue_script('plugin', get_template_directory_uri() . '/assets/js/plugins.min.js');
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery.js', array(), $version, true);
+    wp_enqueue_script('plugin', get_template_directory_uri() . '/assets/js/plugins.min.js', array(), $version, true);
 
     /*
     ========================================
     slider revolution 5.x scripts
     ========================================
     */
-    wp_enqueue_script('tools-js', get_template_directory_uri() . '/assets/rs-plugin/js/jquery.themepunch.tools.min.js');
-    wp_enqueue_script('revolution-js', get_template_directory_uri() . '/assets/rs-plugin/js/jquery.themepunch.revolution.min.js');
+    wp_enqueue_script('tools-js', get_template_directory_uri() . '/assets/rs-plugin/js/jquery.themepunch.tools.min.js', array(), $version, true);
+    wp_enqueue_script('revolution-js', get_template_directory_uri() . '/assets/rs-plugin/js/jquery.themepunch.revolution.min.js', array(), $version, true);
 
     /*
     ========================================
     add-ons js
     ========================================
     */
-    wp_enqueue_script('pixi-js', get_template_directory_uri() . '/assets/rs-plugin/js/pixi.min.js');
+    wp_enqueue_script('pixi-js', get_template_directory_uri() . '/assets/rs-plugin/js/pixi.min.js', array(), $version, true);
 
     /*
     ========================================
     slider revolution extensions
     ========================================
     */
-    wp_enqueue_script('action-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.actions.min.js');
-    wp_enqueue_script('carousel-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.carousel.min.js');
-    wp_enqueue_script('kenburn-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.kenburn.min.js');
-    wp_enqueue_script('layeranimation-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js');
-    wp_enqueue_script('migration-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.migration.min.js');
-    wp_enqueue_script('navigation-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.navigation.min.js');
-    wp_enqueue_script('parallax-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.parallax.min.js');
-    wp_enqueue_script('slideanims-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.slideanims.min.js');
-    wp_enqueue_script('video-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.video.min.js');
+    wp_enqueue_script('action-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.actions.min.js', array(), $version, true);
+    wp_enqueue_script('carousel-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.carousel.min.js', array(), $version, true);
+    wp_enqueue_script('kenburn-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.kenburn.min.js', array(), $version, true);
+    wp_enqueue_script('layeranimation-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js', array(), $version, true);
+    wp_enqueue_script('migration-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.migration.min.js', array(), $version, true);
+    wp_enqueue_script('navigation-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.navigation.min.js', array(), $version, true);
+    wp_enqueue_script('parallax-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.parallax.min.js', array(), $version, true);
+    wp_enqueue_script('slideanims-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.slideanims.min.js', array(), $version, true);
+    wp_enqueue_script('video-js', get_template_directory_uri() . '/assets/rs-plugin/js/extensions/revolution.extension.video.min.js', array(), $version, true);
 
     /*
     ========================================
     footer scripts
     ========================================
     */
-    wp_enqueue_script('functions-js', get_template_directory_uri() . '/assets/js/functions.js');
+     if(is_front_page()){
+      wp_enqueue_script('rev-js', get_template_directory_uri() . '/assets/js/rev.js', array(), $version, true);
+    }
+
+    wp_enqueue_script('functions-js', get_template_directory_uri() . '/assets/js/functions.js', array(), $version, true);
 }
 add_action('wp_enqueue_scripts', 'grace_theme_scripts');
 
@@ -146,8 +141,3 @@ function register_menus()
     );
 }
 add_action('init', 'register_menus');
-
-require get_template_directory() . '/inc/walker.php';
-=======
- ob_get_clean();
->>>>>>> origin/main
