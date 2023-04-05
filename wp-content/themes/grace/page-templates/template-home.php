@@ -1,17 +1,18 @@
 <?php
+
 /**
-* Template Name: Homepage
-*
-* @package grace
-*/
+ * Template Name: Homepage
+ *
+ * @package grace
+ */
 
 get_header();
 if (have_rows('flexible_section')) {
-    while (have_rows('flexible_section')):
+    while (have_rows('flexible_section')) :
         the_row();
         get_template_part('/partials/flexible-content/' . get_row_layout());
     endwhile;
-    }
+}
 
 ?>
 
@@ -23,80 +24,8 @@ if (have_rows('flexible_section')) {
         <div class="section mt-2 bg-transparent py-0 py-md-auto">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 center">
-                        <h2 class="text-title-light text-dark mb-5 ls1 text-uppercase">
-                            Who we are
-                        </h2>
-                        <p style="font-size: 18px; color: #777">
-                            The Grace Culinary Academy is a not-for-profit educational
-                            institution dedicated to providing comprehensive culinary
-                            education to students in Nepal. Our mission is to prepare
-                            students for successful careers in the culinary arts and
-                            hospitality industry by providing a rigorous and engaging
-                            curriculum, hands-on experience, and a supportive learning
-                            environment.
-                        </p>
-                        <div class="mb-4">
-                            <a href="demos/recipes/recipe-single.html"
-                                class="button button-circle button-large m-0 font-weight-semibold nott ls0 text-right">Read
-                                More<i class="icon-angle-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-5 mb-3">
-                        <h3 class="center">Browse by Category</h3>
-                        <div class="categories-lists justify-content-center clearfix">
-                            <a href="demos/recipes/recipes.html" data-animate="fadeInUp" class="categories" style="
-                        background-image: url('<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/categories/bf.jpg' ?>');
-                      ">
-                                <div class="categories-details">
-                                    <div class="icon">
-                                        <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/icons/bf.svg' ?>"
-                                            alt="Breakfast" />
-                                    </div>
-                                    <div class="info">Our Brochure</div>
-                                </div>
-                            </a>
 
-                            <a href="demos/recipes/recipes.html" data-animate="fadeInUp" data-delay="100"
-                                class="categories" style="
-                        background-image: url('<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/categories/lunch.jpg' ?>');
-                      ">
-                                <div class="categories-details">
-                                    <div class="icon">
-                                        <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/icons/lunch.svg' ?>"
-                                            alt="Lunch" />
-                                    </div>
-                                    <div class="info">Our Philosophy</div>
-                                </div>
-                            </a>
 
-                            <a href="demos/recipes/recipes.html" data-animate="fadeInUp" data-delay="200"
-                                class="categories" style="
-                        background-image: url('<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/categories/dinner.jpg' ?>');
-                      ">
-                                <div class="categories-details">
-                                    <div class="icon">
-                                        <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/icons/dinner.svg' ?>"
-                                            alt="Dinner" />
-                                    </div>
-                                    <div class="info">Courses</div>
-                                </div>
-                            </a>
-
-                            <a href="demos/recipes/recipes.html" data-animate="fadeInUp" data-delay="200"
-                                class="categories" style="
-                        background-image: url('<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/categories/desserts.jpg' ?>');
-                      ">
-                                <div class="categories-details">
-                                    <div class="icon">
-                                        <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/icons/dinner.svg' ?>"
-                                            alt="Dinner" />
-                                    </div>
-                                    <div class="info">Enrollment Form</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

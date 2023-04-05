@@ -1,8 +1,9 @@
 <?php
+
 /**
 
-*/
-if(have_rows('banner_repeater')): ?>
+ */
+if (have_rows('banner_repeater')) : ?>
 
 <section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header">
     <div class="slider-inner">
@@ -13,21 +14,20 @@ if(have_rows('banner_repeater')): ?>
                 <ul>
                     <!-- SLIDE  -->
                     <?php
-                    $i= 7;
-                    while(have_rows('banner_repeater')): the_row();
-                    $image = get_sub_field('banner_image');
-                     ?>
-                    <li data-index="rs-<?php echo $i; ?>" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-                        data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-                        data-thumb="<?php echo $image['url']; ?>"
-                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                        data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                        data-param9="" data-param10="" data-description="">
+                        $i = 7;
+                        while (have_rows('banner_repeater')) : the_row();
+                            $image = get_sub_field('image');
+                        ?>
+                    <li data-index="rs-<?php echo $i; ?>" data-transition="fade" data-slotamount="default"
+                        data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                        data-masterspeed="300" data-thumb="<?php echo $image['url']; ?>" data-rotate="0"
+                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                        data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                        data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="<?php echo $image['url']; ?>"
-                            alt="Image" data-duration="4000" data-lazyload="<?php echo $image['url']; ?>"
-                            data-bgposition="center center" data-bgfit="cover" data-bgparallax="4" class="rev-slidebg"
-                            data-no-retina />
+                        <img src="<?php echo $image['url']; ?>" alt="Image" data-duration="4000"
+                            data-lazyload="<?php echo $image['url']; ?>" data-bgposition="center center"
+                            data-bgfit="cover" data-bgparallax="4" class="rev-slidebg" data-no-retina />
                         <!-- LAYERS -->
 
                         <!-- LAYER NR. 1 -->
@@ -37,7 +37,8 @@ if(have_rows('banner_repeater')): ?>
                             data-fontsize="['54','44','36','40']" data-width="auto" data-height="auto"
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":1200,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','left','center']" style="z-index: 7; white-space: nowrap; font-size: 54px; line-height: 54px; letter-spacing: 0px; color: #fff; ">
+                            data-textAlign="['inherit','inherit','left','center']"
+                            style="z-index: 7; white-space: nowrap; font-size: 54px; line-height: 54px; letter-spacing: 0px; color: #fff; ">
                             <?php the_sub_field('heading'); ?>
                         </h3>
 
@@ -50,7 +51,8 @@ if(have_rows('banner_repeater')): ?>
                             data-height="auto" data-visibility="['on', 'on', 'off', 'off']" data-type="text"
                             data-responsive_offset="on"
                             data-frames='[{"delay":1500,"split":"words","splitdelay":0.05,"speed":1000,"split_direction":"forward","frame":"0","from":"x:50px;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","split":"words","splitdelay":0.02,"speed":300,"split_direction":"backward","frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['left','left','left','center']" style="z-index: 5; min-width: 480px; max-width: 480px; white-space: normal;letter-spacing: 0px; ">
+                            data-textAlign="['left','left','left','center']"
+                            style="z-index: 5; min-width: 480px; max-width: 480px; white-space: normal;letter-spacing: 0px; ">
                             <?php the_sub_field('sub_heading'); ?>
                         </p>
 
@@ -69,7 +71,7 @@ if(have_rows('banner_repeater')): ?>
                       font-weight: 400;
                       color: #ffffff;
                     ">
-                          <?php the_sub_field('enrollment_text'); ?>
+                            <?php the_sub_field('enrollment_text'); ?>
                         </div>
 
                         <a class="tp-caption rev-btn button button-large m-0 button-white font-weight-bold button-circle button-grace text-capitalize"
@@ -80,13 +82,13 @@ if(have_rows('banner_repeater')): ?>
                             data-responsive_offset="off" data-responsive="off" data-fontsize="['18', '15', '15', '15']"
                             data-lineheight="['40', '40', '30', '30']"
                             data-frames='[{"delay":3000,"speed":1600,"frame":"0","from":"x:50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#FFF","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#FFF","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:#000;"}]'
-                            style="z-index: 9; padding: 4px 28px"><span><?php the_sub_field('button_label'); ?></span> <i
-                                class="icon-angle-right"></i>
+                            style="z-index: 9; padding: 4px 28px"><span><?php the_sub_field('button_label'); ?></span>
+                            <i class="icon-angle-right"></i>
                         </a>
                     </li>
-                  <?php
-                  $i = $i + 1;
-                endwhile; ?>
+                    <?php
+                            $i = $i + 1;
+                        endwhile; ?>
 
                     <!-- SLIDE  -->
 
@@ -97,4 +99,5 @@ if(have_rows('banner_repeater')): ?>
         <!-- END REVOLUTION SLIDER -->
     </div>
 </section>
+
 <?php endif; ?>
