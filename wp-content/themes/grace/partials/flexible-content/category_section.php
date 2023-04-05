@@ -1,6 +1,6 @@
+<?php if (have_rows('category_repeater')) : ?>
 <div class="col-12 mt-5 mb-3">
     <h3 class="center"><?php the_sub_field('heading'); ?></h3>
-    <?php if (have_rows('category_repeater')) : ?>
     <div class="categories-lists justify-content-center clearfix">
 
         <?php while (have_rows('category_repeater')) : the_row(); ?>
@@ -23,5 +23,5 @@
         <?php endwhile; ?>
 
     </div>
-    <?php endif; ?>
 </div>
+<?php endif; ?>
