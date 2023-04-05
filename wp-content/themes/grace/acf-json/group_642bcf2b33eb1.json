@@ -379,12 +379,79 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_642d081cc5457": {
+                    "key": "layout_642d081cc5457",
+                    "name": "news_and_notice",
+                    "label": "News and Notice",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_642d0879c5458",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_642d0883c5459",
+                            "label": "Sub Heading",
+                            "name": "sub_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_642d00c41c9d7": {
                     "key": "layout_642d00c41c9d7",
                     "name": "faq",
                     "label": "FAQ",
                     "display": "block",
                     "sub_fields": [
+                        {
+                            "key": "field_642d0901b1188",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
                         {
                             "key": "field_642d018fa3601",
                             "label": "FAQ Repeater",
@@ -471,5 +538,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1680671165
+    "modified": 1680673042
 }

@@ -133,74 +133,7 @@ if (have_rows('flexible_section')) {
         <!-- courses section end -->
 
         <!-- news and notice section start  -->
-        <div class="section mb-0">
-            <div class="container">
-                <div class="row clearfix">
-                    <div class="heading-block center col-md-6 offset-md-3">
-                        <h2 class="mb-3">News & Notice</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Quae veniam quam incidunt eos eaque esse ducimus dolore,
-                            velit, laborum dignissimos?
-                        </p>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div class="row clearfix">
-                    <div class="col-md-4 mt-4">
-                        <div class="card border-0 shadow-sm">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/blog/piping-bag.jpg' ?>"
-                                class="card-img-top" alt="Image" />
-                            <div class="card-body" style="padding: 40px">
-                                <h4 class="card-title mb-3">
-                                    How to Make Paper Piping-Bag
-                                </h4>
-                                <p class="card-text">
-                                    Authoritatively productize 24/7 platforms
-                                    authoritatively rather than enterprise customer service.
-                                </p>
-                                <a href="#" class="card-link stretched-link">Learn More
-                                    <i class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 mt-4">
-                        <div class="card border-0 shadow-sm">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/blog/healthy-food.jpg' ?>"
-                                class="card-img-top" alt="Image" />
-                            <div class="card-body" style="padding: 40px">
-                                <h4 class="card-title mb-3">
-                                    Top 10 Healthy Foods of 2021
-                                </h4>
-                                <p class="card-text">
-                                    Dramatically initiate authoritatively interactive
-                                    e-tailers with enterprise results phosfluorescently.
-                                </p>
-                                <a href="#" class="card-link stretched-link">Learn More
-                                    <i class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mt-4">
-                        <div class="card border-0 shadow-sm">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/demos/recipes/images/blog/meal-prep.jpg' ?>"
-                                class="card-img-top" alt="Image" />
-                            <div class="card-body" style="padding: 40px">
-                                <h4 class="card-title mb-3">Top Vegetarian Meal Preps</h4>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and
-                                    make up the bulk of the card's content.
-                                </p>
-                                <a href="#" class="card-link stretched-link">Learn More
-                                    <i class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- news and notices section end -->
 
         <!-- faq section start -->

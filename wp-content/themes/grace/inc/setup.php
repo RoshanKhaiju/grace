@@ -17,6 +17,7 @@ function grace_theme_support()
 {
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
+    add_image_size('newsAndNoticeImg', 410, 385);
 }
 add_action('init', 'grace_theme_support');
 
@@ -118,8 +119,8 @@ function grace_theme_scripts()
     footer scripts
     ========================================
     */
-     if(is_front_page()){
-      wp_enqueue_script('rev-js', get_template_directory_uri() . '/assets/js/rev.js', array(), $version, true);
+    if (is_front_page()) {
+        wp_enqueue_script('rev-js', get_template_directory_uri() . '/assets/js/rev.js', array(), $version, true);
     }
 
     wp_enqueue_script('functions-js', get_template_directory_uri() . '/assets/js/functions.js', array(), $version, true);
