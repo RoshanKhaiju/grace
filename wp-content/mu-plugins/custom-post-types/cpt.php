@@ -50,41 +50,41 @@ function add_taxonomy($name, $post_type, $args = array())
 // 	'has_archive' => true
 // ] );
 
-add_post_type('gallery', [
-	'public'      => true,
-	'label'       => 'Galleries',
-	'menu_icon'   => 'dashicons-calendar',
-	'labels'      => ['add_new_item' => "Add new gallery"],
-	'supports'    => ['title', 'thumbnail', 'author'],
-	'has_archive' => true
-]);
+// add_post_type('gallery', [
+// 	'public'      => true,
+// 	'label'       => 'Galleries',
+// 	'menu_icon'   => 'dashicons-calendar',
+// 	'labels'      => ['add_new_item' => "Add new gallery"],
+// 	'supports'    => ['title', 'thumbnail', 'author'],
+// 	'has_archive' => true
+// ]);
 
 add_post_type('courses', [
 	'public'      => true,
 	'label'       => 'Courses',
-	'menu_icon'   => 'dashicons-calendar',
+	'menu_icon'   => 'dashicons-book-alt',
 	'labels'      => ['add_new_item' => "Add new courses"],
-	'supports'    => ['title', 'thumbnail', 'excerpt', 'author'],
+	'supports'    => ['title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'],
 	'has_archive' => true
 ]);
 
 
-$labels = [
-	'name'                       => 'Albums',
-	'singular_name'              => 'Album',
-	'menu_name'                  => 'Album',
-	'all_items'                  => 'All Albums',
-	'parent_item'                => 'Parent Album',
-	'parent_item_colon'          => 'Parent Album:',
-	'new_item_name'              => 'New Album Name',
-	'add_new_item'               => 'Add New Album',
-	'edit_item'                  => 'Edit Album',
-	'update_item'                => 'Update Album',
-	'separate_items_with_commas' => 'Separate Album with commas',
-	'search_items'               => 'Search Albums',
-	'add_or_remove_items'        => 'Add or remove Albums',
-	'choose_from_most_used'      => 'Choose from the most used Albums',
-];
+// $labels = [
+// 	'name'                       => 'Albums',
+// 	'singular_name'              => 'Album',
+// 	'menu_name'                  => 'Album',
+// 	'all_items'                  => 'All Albums',
+// 	'parent_item'                => 'Parent Album',
+// 	'parent_item_colon'          => 'Parent Album:',
+// 	'new_item_name'              => 'New Album Name',
+// 	'add_new_item'               => 'Add New Album',
+// 	'edit_item'                  => 'Edit Album',
+// 	'update_item'                => 'Update Album',
+// 	'separate_items_with_commas' => 'Separate Album with commas',
+// 	'search_items'               => 'Search Albums',
+// 	'add_or_remove_items'        => 'Add or remove Albums',
+// 	'choose_from_most_used'      => 'Choose from the most used Albums',
+// ];
 
 //add_taxonomy( "album", 'product', [
 //	'labels'       => $labels,
