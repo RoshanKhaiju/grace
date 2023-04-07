@@ -1,53 +1,63 @@
-  <div class="section mb-0">
-      <div class="container">
-          <div class="row clearfix">
+<?php
 
-              <div class="heading-block center col-md-6 offset-md-3">
-                  <h2 class="mb-3"><?php the_sub_field('heading') ?></h2>
-                  <p>
-                      <?php the_sub_field('sub_heading') ?>
-                  </p>
-              </div>
+/**
+ * news and notice section template
+ * 
+ * @package grace
+ */
+?>
 
-          </div>
-          <div class="clear"></div>
-          <div class="row clearfix">
+<div class="section mb-0">
+    <div class="container">
+        <div class="row clearfix">
 
-              <?php
+            <div class="heading-block center col-md-6 offset-md-3">
+                <h2 class="mb-3"><?php the_sub_field('heading') ?></h2>
+                <p>
+                    <?php the_sub_field('sub_heading') ?>
+                </p>
+            </div>
 
-                //   the query
-                $the_query = new WP_Query(array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'category_name' => 'news-and-notice',
-                    'posts_per_page' => 3,
-                ))
-                ?>
+        </div>
+        <div class="clear"></div>
+        <div class="row clearfix">
 
-              <?php
-                if ($the_query->have_posts()) :
-                    while ($the_query->have_posts()) : $the_query->the_post();
-                ?>
+            <?php
 
-              <div class="col-md-4 mt-4">
-                  <div class="card border-0 shadow-sm">
-                      <img src="<?php the_post_thumbnail('newsAndNoticeImg'); ?>" class="card-img-top" alt="Image" />
-                      <div class="card-body" style="padding: 40px">
-                          <h4 class="card-title mb-3">
-                              <?php the_title() ?>
-                          </h4>
-                          <p class="card-text">
-                              <?php the_excerpt() ?>
-                          </p>
-                          <a href="<?php the_permalink() ?>" class="card-link stretched-link">Learn More
-                              <i class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
-                      </div>
-                  </div>
-              </div>
+            //   the query
+            $args = array(
+                'post_type' => 'post',
+                'post_status' => 'publish',
+                'category_name' => 'news-and-notice',
+                'posts_per_page' => 3,
+            );
 
-              <?php endwhile; ?>
-              <?php endif; ?>
+            $query = new WP_Query($args);
+            if ($query->have_posts()) :
+                while ($query->have_posts()) : $query->the_post();
+            ?>
 
-          </div>
-      </div>
-  </div>
+            <div class="col-md-4 mt-4">
+                <div class="card border-0 shadow-sm">
+                    <?php the_post_thumbnail('medium', array('class' => 'card-img-top', 'alt' => 'Image')); ?>
+                    <div class="card-body" style="padding: 40px">
+                        <h4 class="card-title mb-3">
+                            <?php the_title() ?>
+                        </h4>
+                        <p class="card-text">
+                            <?php the_excerpt() ?>
+                        </p>
+                        <a href="<?php the_permalink() ?>" class="card-link stretched-link">Learn More
+                            <i class="icon-angle-right position-relative ml-2" style="top: 2px"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <?php
+                endwhile;
+            endif;
+            wp_reset_query(); ?>
+
+        </div>
+    </div>
+</div>

@@ -1,27 +1,49 @@
-<?php if (have_rows('category_repeater')) : ?>
+<?php
+
+/**
+ * browse by category section template
+ * 
+ * @package grace
+ */
+?>
+
+
 <div class="col-12 mt-5 mb-3">
     <h3 class="center"><?php the_sub_field('heading'); ?></h3>
     <div class="categories-lists justify-content-center clearfix">
 
-        <?php while (have_rows('category_repeater')) : the_row(); ?>
+        <?php
+        if (have_rows('category_repeater')) :
+            while (have_rows('category_repeater')) : the_row();
+        ?>
 
         <?php
                 $bg_image = get_sub_field('background_image');
                 $image = get_sub_field('image');
                 ?>
 
-        <a href="<?php the_sub_field('category_url'); ?>" data-animate="fadeInUp" class="categories" style="
-                        background-image: url('<?php echo $bg_image['url']; ?>')">
-            <div class="categories-details">
+        <?php
+                // echo '<pre>';
+                // print_r($image);
+                // wp_die();
+                ?>
+
+        <a href="<?php the_sub_field('category_url') ?>" data-animate="fadeInUp" class="categories" style="
+                        background-image: url(<?php echo $bg_image['url']; ?>); ">
+            <div class=" categories-details">
+
                 <div class="icon">
-                    <img src="<?php echo $image['url']; ?>" alt="Breakfast" />
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
                 </div>
                 <div class="info"><?php the_sub_field('title') ?></div>
             </div>
         </a>
 
-        <?php endwhile; ?>
+
+        <?php
+            endwhile;
+        endif;
+        ?>
 
     </div>
 </div>
-<?php endif; ?>

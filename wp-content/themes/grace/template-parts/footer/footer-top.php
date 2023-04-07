@@ -32,7 +32,7 @@
                     )
                     ?>
 
-                    <ul class="list-unstyled ml-0">
+                    <!-- <ul class="list-unstyled ml-0">
                         <li class="mb-2">
                             <a href="#" class="text-black-50">Home</a>
                         </li>
@@ -42,7 +42,8 @@
                         <li class="mb-2">
                             <a href="#" class="text-black-50">FAQs</a>
                         </li>
-                    </ul>
+                    </ul> -->
+
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-6">

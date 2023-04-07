@@ -124,6 +124,7 @@ function grace_theme_scripts()
     }
 
     wp_enqueue_script('functions-js', get_template_directory_uri() . '/assets/js/functions.js', array(), $version, true);
+    wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom.js', array(), $version, true);
 }
 add_action('wp_enqueue_scripts', 'grace_theme_scripts');
 

@@ -8,12 +8,12 @@
   --themecolor: #a71f36;
 }
 
-h1 > span:not(.nocolor):not(.badge),
-h2 > span:not(.nocolor):not(.badge),
-h3 > span:not(.nocolor):not(.badge),
-h4 > span:not(.nocolor):not(.badge),
-h5 > span:not(.nocolor):not(.badge),
-h6 > span:not(.nocolor):not(.badge) {
+h1>span:not(.nocolor):not(.badge),
+h2>span:not(.nocolor):not(.badge),
+h3>span:not(.nocolor):not(.badge),
+h4>span:not(.nocolor):not(.badge),
+h5>span:not(.nocolor):not(.badge),
+h6>span:not(.nocolor):not(.badge) {
   color: var(--themecolor);
 }
 
@@ -83,7 +83,7 @@ h5,
 h6,
 #logo a,
 .menu-link,
-.mega-menu-style-2 .mega-menu-title > .menu-link,
+.mega-menu-style-2 .mega-menu-title>.menu-link,
 .top-search-form input,
 .entry-link,
 .entry.entry-date-section span,
@@ -112,7 +112,7 @@ label,
   background-color: #a71f36;
 }
 
-.menu-container > .menu-item > .menu-link {
+.menu-container>.menu-item>.menu-link {
   font-size: 18px;
   color: #fff;
 }
@@ -166,7 +166,7 @@ label,
   border-bottom: 1px solid #dee2e6;
   padding-bottom: 24px;
   margin-bottom: 24px;
-  width: 60rem;
+  /* width: 60rem; */
 }
 
 .toggle-header {
@@ -191,8 +191,7 @@ label,
 }
 
 /*--- Responsive ---*/
-@media screen and (min-width: 1361px) {
-}
+@media screen and (min-width: 1361px) {}
 
 @media (min-width: 992px) and (max-width: 1360px) {
   #header-wrap::before {
@@ -210,7 +209,7 @@ label,
     margin-top: 1rem;
   }
 
-  .grid-lg-3 > .grid-item {
+  .grid-lg-3>.grid-item {
     width: 31.875%;
   }
 
@@ -223,12 +222,9 @@ label,
   }
 
   .categories::after {
-    background: linear-gradient(
-        to bottom,
+    background: linear-gradient(to bottom,
         rgba(0, 0, 0, 0) 10%,
-        rgba(0, 0, 0, 0.8)
-      )
-      100%;
+        rgba(0, 0, 0, 0.8)) 100%;
   }
 }
 
@@ -245,7 +241,7 @@ label,
     padding: 1rem 0;
   }
 
-  .menu-container > .menu-item > .menu-link {
+  .menu-container>.menu-item>.menu-link {
     color: #a71f36;
     font-size: 16px;
     font-weight: 600 !important;
@@ -262,6 +258,7 @@ label,
 }
 
 @media screen and (max-width: 575px) {
+
   .tp-caption.Restaurant-Description,
   .Restaurant-Description {
     padding-left: 2rem !important;
